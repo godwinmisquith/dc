@@ -16,6 +16,7 @@ import {
   Wishlist,
   SellerDashboard,
   ProductForm,
+  Settings,
 } from './pages';
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
                 <Route path="/seller/dashboard" element={<SellerDashboard />} />
                 <Route path="/seller/products/new" element={<ProductForm />} />
                 <Route path="/seller/products/:id/edit" element={<ProductForm />} />
+                <Route path="/settings" element={<Settings />} />
               </Routes>
             </main>
             <Footer />

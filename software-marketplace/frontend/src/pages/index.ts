@@ -10,3 +10,4 @@ export { OrderDetail } from './OrderDetail';
 export { Wishlist } from './Wishlist';
 export { SellerDashboard } from './SellerDashboard';
 export { ProductForm } from './ProductForm';
+export { Settings } from './Settings';
