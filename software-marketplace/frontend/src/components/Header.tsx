@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Search, ShoppingCart, Heart, User, Menu, X, Package, LogOut, LayoutDashboard } from 'lucide-react';
+import { Search, ShoppingCart, Heart, User, Menu, X, Package, LogOut, LayoutDashboard, Settings } from 'lucide-react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import {
@@ -106,6 +106,12 @@ export function Header() {
                       <Link to="/wishlist" className="cursor-pointer">
                         <Heart className="mr-2 h-4 w-4" />
                         Wishlist
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link to="/settings" className="cursor-pointer">
+                        <Settings className="mr-2 h-4 w-4" />
+                        Settings
                       </Link>
                     </DropdownMenuItem>
                     {(user?.role === 'seller' || user?.role === 'admin') && (
